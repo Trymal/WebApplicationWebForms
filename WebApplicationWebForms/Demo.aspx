@@ -13,8 +13,9 @@
         <div>
         </div>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Action" />
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://www.google.com/">Texte de direction</asp:HyperLink>
-        <asp:CheckBox ID="CheckBox1" runat="server" />Checkbox de validation
+        
+        <asp:TextBox ID="txtName" runat="server" OnClick="Page_Load"></asp:TextBox>
+
     </form>
 </body>
 </html>

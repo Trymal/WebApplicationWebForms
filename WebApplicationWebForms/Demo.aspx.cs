@@ -13,11 +13,14 @@ namespace WebApplicationWebForms
         protected void Page_Load(object sender, EventArgs e)
         {
             this.date = DateTime.Now;
+
+            Session["Name"] = txtName.Text;
+            Response.Write(Session["Name"]);
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Console.Write("Bouton Cliqué");
+           
         }
     }
 }
