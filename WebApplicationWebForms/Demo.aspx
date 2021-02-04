@@ -1,4 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Demo.aspx.cs" Inherits="WebApplicationWebForms.Demo" %>
+<%@ Register Src="~/WebUserControl1.ascx" TagName="WebControl" TagPrefix="TWebControl"%>
+
 
 <!DOCTYPE html>
 
@@ -10,11 +12,11 @@
 <body>
     <h1>Voici la date : <% =date %></h1>
     <form id="form1" runat="server">
-        <div>
-        </div>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Action" />
         
         <asp:TextBox ID="txtName" runat="server" OnClick="Page_Load"></asp:TextBox>
+
+        <TWebControl:WebControl ID="Header" runat="server"/>
 
     </form>
 </body>
