@@ -13,7 +13,7 @@ namespace WebApplicationWebForms
         {
             string connetionString;
 
-            connetionString = @"Data Source=PC_PIERRE\SQLEXPRESS01;Trusted_Connection=True;Database=CoursCSharp ;User ID=userAd;Password=userad";
+            connetionString = @"Data Source=localhost\SQLEXPRESS01;Trusted_Connection=True;Database=CoursCSharp ;User ID=userAd;Password=userad";
             //connetionString = @"Server=tcp:myservertuto.database.windows.net,1433;Initial Catalog=mydbtuto;Persist Security Info=False;User ID=myadmin;Password=Admin123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             cnn = new SqlConnection(connetionString);
@@ -39,7 +39,7 @@ namespace WebApplicationWebForms
             SqlCommand command;
             SqlDataReader dataReader;
             String sql, Output = " ";
-            sql = "Select TutorialID,TutorialName from Tutorial";
+            sql = "Select TutorialID,TutorialName from Tutorial order by len([TutorialID]), [TutorialID]";
 
             command = new SqlCommand(sql, cnn);
 
@@ -55,14 +55,6 @@ namespace WebApplicationWebForms
 
             cnn.Close();
 
-            lblName.Visible = false;
-            txtName.Visible = false;
-            lstLocation.Visible = false;
-            chkC.Visible = false;
-            chkASP.Visible = false;
-            rdMale.Visible = false;
-            rdFemale.Visible = false;
-            btnSubmit.Visible = true;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -71,7 +63,7 @@ namespace WebApplicationWebForms
 
             SqlCommand command;
             SqlDataAdapter adapter = new SqlDataAdapter();
-            String sql = "Insert into Tutorial(TutorialID,TutorialName) values (3, 'VB.Net ')";
+            String sql = "Insert into Tutorial(TutorialID,TutorialName) values (" + txtId.Text + ",  " + "'" + txtName.Text + "'" + ")";
 
             command = new SqlCommand(sql, cnn);
 
@@ -82,14 +74,6 @@ namespace WebApplicationWebForms
 
             cnn.Close();
 
-            lblName.Visible = false;
-            txtName.Visible = false;
-            lstLocation.Visible = false;
-            chkC.Visible = false;
-            chkASP.Visible = false;
-            rdMale.Visible = false;
-            rdFemale.Visible = false;
-            btnSubmit.Visible = false;
 
             btnSubmit_Click(sender, e);
 
@@ -112,14 +96,6 @@ namespace WebApplicationWebForms
 
             cnn.Close();
 
-            lblName.Visible = false;
-            txtName.Visible = false;
-            lstLocation.Visible = false;
-            chkC.Visible = false;
-            chkASP.Visible = false;
-            rdMale.Visible = false;
-            rdFemale.Visible = false;
-            btnSubmit.Visible = false;
 
             btnSubmit_Click(sender, e);
         }
@@ -130,7 +106,7 @@ namespace WebApplicationWebForms
 
             SqlCommand command;
             SqlDataAdapter adapter = new SqlDataAdapter();
-            String sql = "Delete Tutorial where TutorialID=3";
+            String sql = "Delete Tutorial where TutorialID= '" + ListTuto.SelectedValue + "'";
 
             command = new SqlCommand(sql, cnn);
 
@@ -141,21 +117,13 @@ namespace WebApplicationWebForms
 
             cnn.Close();
 
-            lblName.Visible = false;
-            txtName.Visible = false;
-            lstLocation.Visible = false;
-            chkC.Visible = false;
-            chkASP.Visible = false;
-            rdMale.Visible = false;
-            rdFemale.Visible = false;
-            btnSubmit.Visible = false;
 
             btnSubmit_Click(sender, e);
         }
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            SqlDataSource1.Update();
+            //SqlDataSource1.Update();
         }
 
     }

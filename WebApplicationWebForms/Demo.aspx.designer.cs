@@ -11,9 +11,8 @@ namespace WebApplicationWebForms
 {
 
 
-    public partial class Demo
-    {
-
+    public partial class Demo Trace=True {
+        
         /// <summary>
         /// Contrôle form1.
         /// </summary>
@@ -23,157 +22,112 @@ namespace WebApplicationWebForms
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
-        /// <summary>
-        /// Contrôle lblName.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
+    /// <summary>
+    /// Contrôle Label3.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Label Label3;
 
-        /// <summary>
-        /// Contrôle txtName.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
+    /// <summary>
+    /// Contrôle txtId.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox txtId;
 
-        /// <summary>
-        /// Contrôle lstLocation.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstLocation;
+    /// <summary>
+    /// Contrôle lblName.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Label lblName;
 
-        /// <summary>
-        /// Contrôle rdFemale.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdFemale;
+    /// <summary>
+    /// Contrôle txtName.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox txtName;
 
-        /// <summary>
-        /// Contrôle rdMale.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdMale;
+    /// <summary>
+    /// Contrôle btnSubmit.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Button btnSubmit;
 
-        /// <summary>
-        /// Contrôle chkC.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkC;
+    /// <summary>
+    /// Contrôle Button1.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Button Button1;
 
-        /// <summary>
-        /// Contrôle chkASP.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkASP;
+    /// <summary>
+    /// Contrôle Button2.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Button Button2;
 
-        /// <summary>
-        /// Contrôle btnSubmit.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmit;
+    /// <summary>
+    /// Contrôle Button3.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Button Button3;
 
-        /// <summary>
-        /// Contrôle Button1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+    /// <summary>
+    /// Contrôle SqlDataSource3.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource3;
 
-        /// <summary>
-        /// Contrôle Button2.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+    /// <summary>
+    /// Contrôle ListTuto.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.ListBox ListTuto;
 
-        /// <summary>
-        /// Contrôle Button3.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+    /// <summary>
+    /// Contrôle SqlDataSource1.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
-        /// <summary>
-        /// Contrôle Label1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-
-        /// <summary>
-        /// Contrôle ListBox1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
-
-        /// <summary>
-        /// Contrôle SqlDataSource1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-
-        /// <summary>
-        /// Contrôle Label2.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-
-        /// <summary>
-        /// Contrôle ListBox2.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox2;
-
-        /// <summary>
-        /// Contrôle GridView1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
-    }
+    /// <summary>
+    /// Contrôle GridView1.
+    /// </summary>
+    /// <remarks>
+    /// Champ généré automatiquement.
+    /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.GridView GridView1;
+}
 }
